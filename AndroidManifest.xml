@@ -17,6 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".MapActivity"/>
-   <uses-library android:name="com.google.android.maps" /> 
+   <uses-library android:name="com.google.android.maps" android:required="true"/> 
     </application>
 </manifest>
