@@ -6,4 +6,7 @@
     <Button android:id="@+id/button1" android:layout_height="wrap_content" android:layout_width="fill_parent"
         android:text="Button" android:layout_centerInParent="true" 
         android:clickable="true"></Button>
+        <Button android:id="@+id/button2" android:layout_height="wrap_content" android:layout_width="fill_parent"
+        android:text="user input" android:layout_centerInParent="true" 
+        android:clickable="true"></Button>
 </LinearLayout>

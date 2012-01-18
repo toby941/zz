@@ -15,6 +15,7 @@ public class ZZActivity extends Activity {
     private WebView wv = null;
     private WebSettings ws = null;
     private Button button = null;
+    private Button userInputButton = null;
 
     /** Called when the activity is first created. */
     @Override
@@ -42,6 +43,14 @@ public class ZZActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent().setClass(ZZActivity.this, MapActivity.class));
+            }
+        });
+        userInputButton = (Button) findViewById(R.id.button2);
+        userInputButton.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent().setClass(ZZActivity.this, UserInputActivity.class));
             }
         });
     }

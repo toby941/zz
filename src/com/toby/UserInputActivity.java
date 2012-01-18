@@ -5,7 +5,10 @@ package com.toby;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnFocusChangeListener;
 import android.widget.DatePicker;
+import android.widget.EditText;
 
 /**
  * UserInputActivity.java
@@ -15,6 +18,7 @@ import android.widget.DatePicker;
 public class UserInputActivity extends Activity {
 
     private DatePicker datePicker;
+    private EditText dateTime;
 
     /*
      * (non-Javadoc)
@@ -25,6 +29,17 @@ public class UserInputActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_dialog);
         datePicker = (DatePicker) findViewById(R.id.datePicker1);
-    }
+        dateTime = (EditText) findViewById(R.id.editText2);
+        dateTime.setOnFocusChangeListener(new OnFocusChangeListener() {
 
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+
+                }
+
+            }
+        });
+
+    }
 }
